@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            color: white;
+        }
+
+        body {
+            background-color: #0A0A0A;
+            /* font-family:Georgia, 'Times New Roman', Times, serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .one {
+            height: 110vh;
+            width: 60vw;
+            position: absolute;
+            /* background-image: linear-gradient(rgba(23, 22, 27, 0.1), rgba(23, 22, 27, 0.1), rgba(23, 22, 27, 0.5)), url("file:///C:/Users/Dell/Downloads/kajalimage.jpg"); */
+            background-image: url("file:///C:/Users/Dell/Downloads/IMG-20210801-WA0043%20(1).jpg");
+            background-size: cover;
+            transform: translate(65%, 0%);
+
+
+        }
+
+        header {
+            height: 90px;
+            width: 100vw;
+            background-color: transparent;
+            position: absolute;
+        }
+
+        header ul {
+            padding: 25px;
+            display: flex;
+            list-style: none;
+
+        }
+
+        header ul li {
+            margin-left: 70px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .text {
+            height: 200px;
+            width: 700px;
+            transform: translate(10%, 130%);
+            text-align: center;
+            padding: 20px;
+        }
+
+        #box1 {
+            height: 70px;
+            width: 670px;
+            background-color: rgba(111, 78, 55, 1);
+            font-size: 40px;
+        }
+
+        #second {
+            height: 700px;
+            width: 100vw;
+            background-color: black;
+            position: relative;
+            transform: translate(0%, 80%);
+        }
+
+        #secondimg {
+            height: 500px;
+            width: 500px;
+            background-color: #BEA79D;
+            transform: translate(30%, 15%);
+        }
+
+        .img2 {
+            height: 450px;
+            width: 450px;
+
+            background-image: url("file:///C:/Users/Dell/Downloads/image2.jpg");
+            /* background-image: url("file:///C:/Users/Dell/Downloads/image33.jpg"); */
+            background-image: url("file:///C:/Users/Dell/Downloads/IMG-20210801-WA0043%20(1).jpg");
+            background-size: cover;
+            transform: translate(40%, -89%);
+        }
+
+        #secondtext {
+            height: 600px;
+            width: 500px;
+            transform: translate(160%, -153%);
+            color: black;
+
+        }
+
+        .mywork {
+            height: 1600px;
+            width: 100vw;
+            background-color: #0A0A0A;
+            position: relative;
+            transform: translate(0%, 35%);
+        }
+
+        .workphoto {
+            height: 1050px;
+            width: 69vw;
+
+            transform: translate(25%, 30%);
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .onework {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("C:/Users/Dell/Downloads/Screenshot%20(53).png");
+            background-size: cover;
+            margin: 2px;
+
+        }
+
+        .twowork {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(56).png");
+            background-size: cover;
+            margin: 2px;
+
+        }
+
+        .threework {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(55).png");
+            background-size: cover;
+        }
+
+        .fourwork {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot12.png");
+            background-size: cover;
+
+        }
+
+        .fivework {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(57).png");
+            background-size: cover;
+        }
+
+        .sixwork {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(52).png");
+            background-size: cover;
+
+        }
+
+        .sevenwork {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(65).png");
+            background-size: cover;
+        }
+
+        .eightwork {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(66).png");
+            background-size: cover;
+
+        }
+
+        .ninework {
+            height: 350px;
+            width: 22.5vw;
+            background-color: #373737;
+            margin: 2px;
+            background-image: linear-gradient(rgba(111, 78, 55, 1), rgba(111, 78, 55, 1), rgba(111, 78, 55, 1)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(58).png");
+            background-size: cover;
+
+
+        }
+
+        ul li:hover {
+            text-decoration: underline;
+
+
+        }
+
+        .certificates {
+            height: 700px;
+            width: 100vw;
+            background-color: black;
+            transform: translate(0%, 50%);
+        }
+
+        .c1 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: white;
+            transform: translate(20%, 90%);
+            background-image: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2)), url("file:///C:/Users/Dell/Downloads/GuviCertification%20-%2091Rc6I2S163B1o6KW9hh.png");
+            background-size: cover;
+        }
+
+        .c2 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: white;
+            transform: translate(140%, -10%);
+            background-image: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2)), url("file:///C:/Users/Dell/Downloads/KAJAL%20INTERNSHIP%20CERTIFICATE_page-000122.jpg");
+            background-size: cover;
+            position: relative;
+        }
+
+        .c3 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: white;
+            transform: translate(260%, -110%);
+            background-image: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2)), url("file:///C:/Users/Dell/Downloads/Screenshot%20(67).png");
+            background-size: cover;
+            position: relative;
+        }
+
+        .c4 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: white;
+            transform: translate(380%, -207%);
+            background-image: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2)), url("file:///C:/Users/Dell/Downloads/IMG_20230804_222002196~2%20(2).jpg");
+            background-size: cover;
+            position: relative;
+
+        }
+
+        footer .footer {
+            height: 800px;
+            width: 100vw;
+            background-color: black;
+            transform: translate(0%, 43%);
+            text-align: center;
+            align-items: center;
+        }
+
+        #line {
+            height: 5px;
+            width: 40px;
+            transform: translate(1870%, -100%);
+            background-color: rgba(111, 78, 55, 1);
+        }
+
+        #textget {
+            transform: translate(175%, 0%);
+        }
+
+        .form {
+            height: 400px;
+            width: 700px;
+
+            transform: translate(60%, 0%);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"] {
+            background-color: white;
+            position: relative;
+
+            height: 50px;
+            width: 40%;
+            color: black;
+            cursor: default;
+            transform: translate(10%, 30%);
+            border-radius: 40px;
+            font-size: 1em;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .layer {
+            background: transperant;
+            height: 350px;
+            width: 22.5vw;
+            position: absolute;
+
+            transition: 0.5s;
+        }
+
+
+
+
+        .layer img {
+
+            width: 100%;
+            font-weight: 500;
+            color: #fff;
+            font-size: 26px;
+            bottom: 0;
+
+
+            position: absolute;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .layer h3 {
+
+            width: 100%;
+            font-weight: 500;
+            color: #fff;
+            font-size: 26px;
+            bottom: 0;
+
+
+            position: absolute;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .layer:hover h3 {
+            bottom: 6.7%;
+            opacity: 1;
+            background: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2));
+        }
+
+        .layer:hover img {
+            bottom: 6.7%;
+            opacity: 1;
+            background: linear-gradient(rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.2));
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="one">
+
+    </div>
+
+
+
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="text">
+        <h2 style="color:white; font-size:40px;">Hello My Name is <p style=" font-size:80px;">KAJAL DHIMAN</p>
+        </h2>
+        <div id="box1"><b>AND I AM A DEVELOPER</b></div>
+    </div>
+
+
+    <div id="second">
+        <div id="secondimg"></div>
+        <div class="img2"></div>
+        <div id="secondtext">
+            <p style="transform:translate(40%,50%); font-size:20px;"><b>Who am I?</b></p>
+            <p style="font-size:50px; color:white"><B>HELLO!!</B></p>
+            <p style="color:white;">Hello, I'm Kajal Dhiman, a passionate web developer currently pursuing a degree in
+                Computer Science Engineering at Chitkara University. As a prefinal year student, I've been on an
+                exciting journey of honing my skills and crafting meaningful digital experiences.
+                <br>
+                Professional Expertise
+                <br>
+                My primary focus is on frontend web development, and I'm proficient in a wide range of programming
+                languages and technologies, including Java, C++, C, HTML, CSS, JavaScript, Python, MySQL, and data
+                structures. I've also worked extensively with ReactJS to build dynamic and user-friendly web
+                applications.
+            </p><br><br><br>
+            <p style="color:white;">
+
+                Notable Achievements
+                <br>
+                One of my notable achievements is the creation of a website for Chitkara University, featuring an
+                interactive campus map. This project allowed me to blend my technical skills with my passion for design
+                and usability, resulting in a practical and visually appealing solution for our university community.
+                <br>
+                A Keen Learner
+                <br>
+                I thrive on challenges and am constantly pushing myself out of my comfort zone to embrace new
+                opportunities and technologies. Learning is a never-ending journey, and I'm excited to see where it
+                takes me next.
+            </p>
+        </div>
+    </div>
+
+    <div class="mywork">
+        <p class="heading" style="color:white; font-size:70px; transform:translate(170%,100%); position:absolute;"><b>MY
+                WORK</b></p>
+        <p style="transform:translate(450%,640%); font-size:20px; position:absolute; color:white;"><b>awesome
+                projects</b></p>
+
+        <div class="workphoto">
+            <div class="onework">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/plantswebsite/plantweb.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)oo.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="twowork">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(68)ll.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="threework">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/clghtml/maintaskmanager.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(66)ll.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="fourwork">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="fivework">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="sixwork">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="sevenwork">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="eightwork">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+            <div class="ninework">
+                <p style="transform:translate(35%,750%); color:white;">PALNT WEBSITE</p>
+                <div class="layer">
+                    <a href="file:///C:/Users/Dell/Desktop/KAJAL/1ST%20SEM%20NEW%20CARTE/Main%20Page/project.html"><img
+                            src="file:///C:/Users/Dell/Downloads/Screenshot%20(53)77.png" alt="" style="background-size:cover;
+                    height: 350px;
+width: 22.5vw;"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="certificates">
+        <p class="heading" style="color:white; font-size:70px; transform:translate(85%,100%); position:absolute;">
+            <b>CERTIFICATIONS</b>
+        </p>
+        <div class="c1">
+
+        </div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <p class="getintouch" style="font-size:30px;">Get In Touch</p>
+
+            <br><br>
+            <div id="line"></div>
+            <br><br>
+
+            <p id="textget" style=" width:350px; text-align:center;">I'm here to connect and collaborate! If you have
+                questions, project ideas, or just want to say hello,
+                please don't hesitate to reach out:</p>
+
+            <br><br>
+            <div class="form">
+                <form action="">
+
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <textarea name="" id="" cols="76" rows="10" style="transform:translate(5%,30%); border-radius:20px;
+                        color:black;"></textarea>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script></script>
+</body>
+
+</html>
